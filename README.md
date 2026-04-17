@@ -1,119 +1,60 @@
-🚖 Cab Assignment System
+Got it 👍 here’s a **simple, clean README** (perfect for submission):
 
-A simple full-stack web application that assigns the nearest available driver to a user based on location (numeric distance logic).
+---
 
-🧩 Project Overview
+````markdown
+# 🚖 Cab Assignment System
 
-This system simulates a basic ride-booking service similar to Uber:
+A simple full-stack app that assigns the nearest driver to a user.
 
-Add drivers with locations
-Request a ride from user location
-Automatically assign the nearest available driver
-Store data in MySQL database
-Display results in React UI
-⚙️ Tech Stack
-Frontend: React.js, Axios, CSS
-Backend: Node.js, Express.js
-Database: MySQL
-API: REST APIs
-🚀 Features
-➕ Add new drivers
-📍 Store driver locations
-🚕 Request ride from user
-🧠 Nearest driver assignment logic
-🗄️ MySQL database integration
-📊 Real-time result display
-🏗️ Project Structure
-cab-assignment-system/
-│
-├── backend/
-│   ├── server.js
-│   ├── package.json
-│   └── node_modules/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── App.js
-│   │   └── App.css
-│   └── package.json
-│
-└── README.md
-🛠️ Setup Instructions
-1️⃣ Clone Repository
-git clone https://github.com/soundaryaNaik/cab-assignment-system.git
-cd cab-assignment-system
-2️⃣ Backend Setup
+## 🧩 Features
+- Add drivers with location
+- Request a ride
+- Finds nearest driver automatically
+- Displays assigned driver and distance
+
+## ⚙️ Tech Stack
+- Frontend: React
+- Backend: Node.js, Express
+- Database: MySQL
+
+## 🚀 How it Works
+1. Add drivers with their locations
+2. Enter user location
+3. System finds nearest driver using:
+   distance = |driver_location - user_location|
+4. Shows assigned driver
+
+## ▶️ Run Project
+
+### Backend
+```bash
 cd backend
 npm install
-
-Create MySQL database:
-
-CREATE DATABASE cab_system;
-
-Run server:
-
 node server.js
+````
 
-Backend runs on:
+### Frontend
 
-http://localhost:5000
-3️⃣ Frontend Setup
+```bash
 cd frontend
 npm install
 npm start
+```
 
-Frontend runs on:
+## 🔌 API
 
-http://localhost:3000
-🔌 API Endpoints
-➕ Add Driver
+### Add Driver
+
 POST /drivers
-{
-  "name": "Ravi",
-  "location": 5
-}
-🚕 Request Ride
+
+### Request Ride
+
 POST /ride
-{
-  "user_location": 7
-}
-🧠 Core Logic
 
-The system calculates nearest driver using:
+## 👩‍💻 Author
 
-distance = |driver_location - user_location|
+Soundarya
 
-Then assigns driver with minimum distance.
 
-🎯 Example
-Input:
 
-Drivers:
-
-Ravi → 2
-Amit → 8
-
-User location:
-
-7
-Output:
-Driver assigned: Amit
-Distance: 1
-📸 UI Preview
-
-(Add screenshot here if needed)
-
-🚀 Future Improvements
-Real-time tracking (Socket.io)
-Google Maps integration
-Authentication system
-Driver availability reset
-Deployment (Vercel + Render)
-👩‍💻 Author
-
-Soundarya Naik
-GitHub: https://github.com/soundaryaNaik
-
-📌 Note
-
-This project is built for learning full-stack development and system design basics.
